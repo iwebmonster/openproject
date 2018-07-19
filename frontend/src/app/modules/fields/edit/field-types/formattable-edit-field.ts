@@ -68,8 +68,8 @@ export class FormattableEditField extends EditField {
   }
 
   public setupMarkdownEditor(container:HTMLElement) {
-    const element = container.querySelector('.op-ckeditor-element') as HTMLElement;
-    
+    const element = container.querySelector('.op-ckeditor-classic-sibling') as HTMLElement;
+
     this.ckEditorSetup
       .create('classic', element, { resource: this.resource })
       .then((editor:ICKEditorInstance) => {

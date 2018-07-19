@@ -33,6 +33,8 @@ import {FormattableEditField} from "core-app/modules/fields/edit/field-types/for
   template: `
     <div class="textarea-wrapper">
       <div class="op-ckeditor-wrapper op-ckeditor-element">
+        <div class="op-ckeditor-classic-sibling">
+        </div>
       </div>
       <edit-field-controls *ngIf="!handler.inEditMode"
                            [fieldController]="handler"
